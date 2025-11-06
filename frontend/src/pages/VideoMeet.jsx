@@ -81,7 +81,7 @@ export default function VideoMeetComponent() {
         }
     }
 
-    const getPermissions = async () => {
+     const getPermissions = async () => {
         try {
             const videoPermission = await navigator.mediaDevices.getUserMedia({ video: true });
             if (videoPermission) {

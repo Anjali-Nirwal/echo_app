@@ -13,7 +13,7 @@ import { IconButton } from '@mui/material';
 export default function History() {
 
 
-    const { getHistoryOfUser } = useContext(AuthContext);
+const { getHistoryOfUser } = useContext(AuthContext);
 
     const [meetings, setMeetings] = useState([])
 

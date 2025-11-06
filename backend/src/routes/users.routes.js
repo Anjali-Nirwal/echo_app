@@ -3,7 +3,7 @@ import { addToHistory, getUserHistory, login, register } from "../controllers/us
 
 
 
-const router = Router();
+ const router = Router();
 
 router.route("/login").post(login)
 router.route("/register").post(register)

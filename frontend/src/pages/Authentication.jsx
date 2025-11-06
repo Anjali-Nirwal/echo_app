@@ -165,7 +165,7 @@ export default function Authentication() {
             </Grid>
 
             <Snackbar
-open={open}
+                open={open}
                 autoHideDuration={4000}
                 message={message}
             />

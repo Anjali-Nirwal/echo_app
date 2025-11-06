@@ -10,7 +10,7 @@ const withAuth = (WrappedComponent ) => {
                 return true;
             } 
             return false;
-        }
+         }
 
         useEffect(() => {
             if(!isAuthenticated()) {

@@ -6,7 +6,7 @@ export default function LandingPage() {
 
     const router = useNavigate();
 
-    return (
+     return (
         <div className='landingPageContainer'>
             <nav>
                 <div className='navHeader'>

@@ -98,4 +98,4 @@ const addToHistory = async (req, res) => {
 }
 
 
-export { login, register, getUserHistory, addToHistory }
+ export { login, register, getUserHistory, addToHistory }
