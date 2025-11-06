@@ -1,6 +1,7 @@
 import mongoose, { Schema } from "mongoose";
 
-
+ //meeting schema 
+ 
 const meetingSchema = new Schema(
     {
         user_id: { type: String },
