@@ -1,8 +1,8 @@
-// ✅ src/environment.js
-const environment = {
-  backendUrl: "http://localhost:5000",
-  socketUrl: "http://localhost:5000",
-  
-};
+let IS_PROD = true;
+const server = IS_PROD ?
+    "https://apnacollegebackend.onrender.com" :
 
-export default environment;  // ✅ default export
+    "http://localhost:8000"
+
+
+export default server;

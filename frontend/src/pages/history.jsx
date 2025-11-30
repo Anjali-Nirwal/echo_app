@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { AuthContext } from '../contexts/AuthContext'
+import { AuthContext } from '../contexts/AuthContext.jsx'
 import { useNavigate } from 'react-router-dom';
 import Card from '@mui/material/Card';
 import Box from '@mui/material/Box';
@@ -13,7 +13,7 @@ import { IconButton } from '@mui/material';
 export default function History() {
 
 
-const { getHistoryOfUser } = useContext(AuthContext);
+    const { getHistoryOfUser } = useContext(AuthContext);
 
     const [meetings, setMeetings] = useState([])
 
@@ -85,5 +85,4 @@ const { getHistoryOfUser } = useContext(AuthContext);
 
         </div>
     )
-}  
-
+}

@@ -81,7 +81,7 @@ export default function VideoMeetComponent() {
         }
     }
 
-     const getPermissions = async () => {
+    const getPermissions = async () => {
         try {
             const videoPermission = await navigator.mediaDevices.getUserMedia({ video: true });
             if (videoPermission) {
@@ -243,7 +243,7 @@ export default function VideoMeetComponent() {
             window.localStream = blackSilence()
             localVideoref.current.srcObject = window.localStream
 
-            getUserMedia()
+            getUserMedia();
 
         })
     }
@@ -391,6 +391,8 @@ export default function VideoMeetComponent() {
         // getUserMedia();
     }
 
+    
+    
     useEffect(() => {
         if (screen !== undefined) {
             getDislayMedia();
