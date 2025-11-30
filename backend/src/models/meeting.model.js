@@ -1,7 +1,6 @@
 import mongoose, { Schema } from "mongoose";
 
- //meeting schema 
- 
+
 const meetingSchema = new Schema(
     {
         user_id: { type: String },
@@ -10,6 +9,6 @@ const meetingSchema = new Schema(
     }
 )
 
- const Meeting = mongoose.model("Meeting", meetingSchema);
+const Meeting = mongoose.model("Meeting", meetingSchema);
 
 export { Meeting };
