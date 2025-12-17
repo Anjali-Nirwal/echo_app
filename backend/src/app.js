@@ -1,7 +1,7 @@
 import express from "express";
 import { createServer } from "node:http";
 
-// import { Server } from "socket.io";
+import { Server } from "socket.io";
 
 import mongoose from "mongoose";
 import { connectToSocket } from "./controllers/socketManager.js";
@@ -23,7 +23,7 @@ app.use("/api/v1/users", userRoutes);
 
 const start = async () => {
     app.set("mongo_user")
-    const connectionDb = await mongoose.connect("mongodb+srv://anjalinirwal02_db_user:videocall@vcall.rbhkws5.mongodb.net/?appName=vcall")
+    const connectionDb = await mongoose.connect("mongodb+srv://anjalinirwal02_db_user:vcall@videocall.ekhs2zx.mongodb.net/?")
 
     console.log(`MONGO Connected DB HOst: ${connectionDb.connection.host}`)
     server.listen(app.get("port"), () => {

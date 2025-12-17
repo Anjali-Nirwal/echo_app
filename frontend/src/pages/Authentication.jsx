@@ -25,11 +25,11 @@ export default function Authentication() {
 
     
 
-    const [username, setUsername] = React.useState();
-    const [password, setPassword] = React.useState();
-    const [name, setName] = React.useState();
-    const [error, setError] = React.useState();
-    const [message, setMessage] = React.useState();
+    const [username, setUsername] = React.useState("");
+    const [password, setPassword] = React.useState("");
+    const [name, setName] = React.useState("");
+    const [error, setError] = React.useState("");
+    const [message, setMessage] = React.useState("");
 
 
     const [formState, setFormState] = React.useState(0);
@@ -71,20 +71,19 @@ export default function Authentication() {
             <Grid container component="main" sx={{ height: '100vh' }}>
                 <CssBaseline />
                 <Grid
-  item
-  xs={12}
-  sm={4}
-  md={7}
-  sx={{
-    backgroundImage: `url("https://source.unsplash.com/featured/?technology,minimal,nature")`,
-    backgroundRepeat: 'no-repeat',
-    backgroundColor: (t) =>
-      t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-  }}
-/>
-
+                    item
+                    xs={false}
+                    sm={4}
+                    md={7}
+                    sx={{
+                        backgroundImage: 'url(https://source.unsplash.com/random?wallpapers)',
+                        backgroundRepeat: 'no-repeat',
+                        backgroundColor: (t) =>
+                            t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                    }}
+                />
                 <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
                     <Box
                         sx={{
@@ -114,11 +113,11 @@ export default function Authentication() {
                                 margin="normal"
                                 required
                                 fullWidth
-                                id="username"
+                                id="fullname"
                                 label="Full Name"
                                 name="username"
                                 value={name}
-                                autoFocus
+                               
                                 onChange={(e) => setName(e.target.value)}
                             /> : <></>}
 
@@ -130,7 +129,7 @@ export default function Authentication() {
                                 label="Username"
                                 name="username"
                                 value={username}
-                                autoFocus
+                                
                                 onChange={(e) => setUsername(e.target.value)}
 
                             />
