@@ -23,7 +23,7 @@ app.use("/api/v1/users", userRoutes);
 
 const start = async () => {
     app.set("mongo_user")
-    const connectionDb = await mongoose.connect("mongodb+srv://anjalinirwal02_db_user:vcall@videocall.ekhs2zx.mongodb.net/?")
+    const connectionDb = await mongoose.connect("mongodb+srv://anjalinirwal02_db_user:<db_password>@videocall.vwpqw5b.mongodb.net/?appName=videocall");
 
     console.log(`MONGO Connected DB HOst: ${connectionDb.connection.host}`)
     server.listen(app.get("port"), () => {
