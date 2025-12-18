@@ -7,9 +7,7 @@ import RestoreIcon from '@mui/icons-material/Restore';
 import { AuthContext } from '../contexts/AuthContext';
 
 function HomeComponent() {
-
-
-    let navigate = useNavigate();
+let navigate = useNavigate();
     const [meetingCode, setMeetingCode] = useState("");
 
 

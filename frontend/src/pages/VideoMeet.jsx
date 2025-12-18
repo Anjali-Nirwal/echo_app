@@ -547,8 +547,6 @@ export default function VideoMeetComponent() {
 
                 </div>
 
-            }
-
-        </div>
+            }</div>
     )
 }

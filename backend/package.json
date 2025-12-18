@@ -20,7 +20,7 @@
     "mongoose": "^8.18.1",
     "socket.io": "^4.8.1"
   },
-  "devDependencies": {
+   "devDependencies": {
     "nodemon": "^3.1.11"
   }
 }

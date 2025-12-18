@@ -59,8 +59,7 @@ export const AuthProvider = ({ children }) => {
             throw err;
         }
     }
-
-    const getHistoryOfUser = async () => {
+const getHistoryOfUser = async () => {
         try {
             let request = await client.get("/get_all_activity", {
                 params: {
